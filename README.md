@@ -6,7 +6,7 @@ This is a simple Hello World program written in Python that demonstrates basic o
 
 
 
-\[Add your YouTube video link here once you create it: https://youtu.be/your-video-id]
+https://youtu.be/your-video-id
 
 
 
@@ -41,6 +41,8 @@ Programming Language and Libraries:
 \* \[Markdown Guide](https://www.markdownguide.org/)
 
 \* \[Git Documentation](https://git-scm.com/doc)
+
+\* \[My Website](https://www.myambar.com)
 
 
 
