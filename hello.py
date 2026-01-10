@@ -1,5 +1,5 @@
 # CSE 310 - Hello World Program
-# Author: [Your Name]
+# Author: Asmamaw Dinku
 
 def main():
     print("=" * 40)
