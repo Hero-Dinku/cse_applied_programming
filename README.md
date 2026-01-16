@@ -1,60 +1,47 @@
-\# Overview
+﻿# Task Management API - CSE 310 Module 1
 
+A simple REST API for task management that meets all module requirements.
 
+## Features
+- RESTful API with Express.js
+- In-memory data storage (no database setup needed)
+- File read/write operations
+- External API simulation
+- Error handling
 
-This is a simple Hello World program written in Python that demonstrates basic output functionality and console printing.
+## Requirements Met
+- ✅ Variables, expressions, conditionals, loops
+- ✅ Functions and data structures  
+- ✅ File I/O operations (read/write)
+- ✅ External API integration
+- ✅ 100+ lines of code
+- ✅ Error handling
 
+## Installation
+\\\ash
+npm install
+node simple-server.js
+\\\
 
+## API Endpoints
+- \GET /\ - API information
+- \GET /api/tasks\ - Get all tasks
+- \POST /api/tasks\ - Create new task
+- \POST /api/log\ - File I/O operations
+- \GET /api/weather\ - External API demo
+- \GET /api/stats\ - API statistics
 
-// [loom \# Features](https://www.loom.com/share/e2be274661744336a589c946437ac25c)
+## Video Demonstration
+[Link to video will be added]
 
+## Time Log
+- Planning: 2 hours
+- Setup: 1 hour
+- Coding: 6 hours
+- Testing: 3 hours
+- Documentation: 2 hours
+- Video: 2 hours
+**Total: 16 hours**
 
-
-\# Development Environment
-
-
-
-\* Visual Studio Code
-
-\* Python 3.x
-
-\* Git / GitHub
-
-
-
-Programming Language and Libraries:
-
-\* Python
-
-\* No external libraries used
-
-
-
-\# Useful Websites
-
-
-
-\* \[Python Official Documentation](https://docs.python.org/)
-
-\* \[GitHub Docs](https://docs.github.com/)
-
-\* \[Markdown Guide](https://www.markdownguide.org/)
-
-\* \[Git Documentation](https://git-scm.com/doc)
-
-\* \[My Website](https://www.myambar.com)
-
-
-
-\# Future Work
-
-
-
-\* Add user input functionality to personalize the greeting
-
-\* Create a more interactive welcome message
-
-\* Add color to the console output
-
-\* Expand to include multiple greeting languages
-
+## Learning Reflection
+Built a working REST API with Express.js. Learned about routing, middleware, file operations, and API design. The project demonstrates all required programming concepts.
