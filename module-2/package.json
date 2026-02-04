@@ -1,0 +1,12 @@
+﻿{
+  \"name\": \"cse310-module2-task-manager\",
+  \"version\": \"1.0.0\",
+  \"description\": \"CSE 310 Module 2 - Task Manager with Web Interface\",
+  \"main\": \"backend.js\",
+  \"scripts\": {
+    \"start\": \"node backend.js\",
+    \"dev\": \"node backend.js\"
+  },
+  \"author\": \"Asmamaw Dinku\",
+  \"license\": \"MIT\"
+}
