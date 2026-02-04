@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 310 - Task Manager (Module 2)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Task Manager</h1>
+            <p class="subtitle">CSE 310 - Module 2 | JavaScript Web App</p>
+            <p class="student">Student: Asmamaw Dinku</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="stats-card">
+                <h3>📊 Statistics</h3>
+                <div id="stats">Loading...</div>
+            </div>
+            
+            <div class="weather-card">
+                <h3>🌤️ Weather</h3>
+                <div id="weather">Loading weather...</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="task-form">
+                <h2>➕ Add New Task</h2>
+                <form id="taskForm">
+                    <input type="text" id="title" placeholder="Task title" required>
+                    <textarea id="description" placeholder="Description"></textarea>
+                    <select id="priority">
+                        <option value="low">Low Priority</option>
+                        <option value="medium" selected>Medium Priority</option>
+                        <option value="high">High Priority</option>
+                    </select>
+                    <button type="submit">Add Task</button>
+                </form>
+            </div>
+
+            <div class="task-list">
+                <h2>📝 All Tasks 
+                    <span class="controls">
+                        <button onclick="loadTasks()">🔄 Refresh</button>
+                        <button onclick="exportToJSON()">💾 Export JSON</button>
+                        <button onclick="exportToCSV()">📄 Export CSV</button>
+                    </span>
+                </h2>
+                
+                <div class="filters">
+                    <label>
+                        <input type="radio" name="filter" value="all" checked onchange="filterTasks()"> All
+                    </label>
+                    <label>
+                        <input type="radio" name="filter" value="pending" onchange="filterTasks()"> Pending
+                    </label>
+                    <label>
+                        <input type="radio" name="filter" value="completed" onchange="filterTasks()"> Completed
+                    </label>
+                </div>
+
+                <div id="tasksContainer">
+                    <div class="loading">Loading tasks...</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>CSE 310 Applied Programming - Module 2 | JavaScript Web Application</p>
+            <p>Requirements: Variables, Conditionals, Loops, Functions, File I/O, External API</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

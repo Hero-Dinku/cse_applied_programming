@@ -1,0 +1,247 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.student {
+    margin-top: 10px;
+    font-weight: bold;
+    background: rgba(255,255,255,0.2);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+.stats-card, .weather-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stats-card h3, .weather-card h3 {
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4facfe;
+    padding-bottom: 10px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+.task-form {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.task-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #4facfe;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+}
+
+.task-list {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.controls {
+    float: right;
+}
+
+.controls button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.filters {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.filters label {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.task-item {
+    background: white;
+    border-left: 4px solid #4facfe;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.task-item:hover {
+    transform: translateX(5px);
+}
+
+.task-item.completed {
+    border-left-color: #28a745;
+    opacity: 0.8;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.task-priority {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.priority-high {
+    background: #ff6b6b;
+    color: white;
+}
+
+.priority-medium {
+    background: #ffd93d;
+    color: #333;
+}
+
+.priority-low {
+    background: #6bcf7f;
+    color: white;
+}
+
+.task-description {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.task-actions button {
+    margin-right: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .dashboard, .main-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .controls {
+        float: none;
+        margin-top: 10px;
+    }
+}
